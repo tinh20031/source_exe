@@ -95,7 +95,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
-#### Using [ASP.NET-MVC-Template](https://github.com/NikolayIT/ASP.NET-MVC-Template) developed by:
-- [Nikolay Kostov](https://github.com/NikolayIT)
-- [Vladislav Karamfilov](https://github.com/vladislav-karamfilov)
-- [Stoyan Shopov](https://github.com/StoyanShopov)
+
