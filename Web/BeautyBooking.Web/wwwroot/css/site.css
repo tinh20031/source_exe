@@ -1926,6 +1926,7 @@ section
 		-moz-transition: all 200ms ease;
 		-o-transition: all 200ms ease;
 		transition: all 200ms ease;
+		line-height: 1.2;
 	}
 
 		.doctor_name a:hover {
@@ -1936,8 +1937,11 @@ section
 	font-size: 12px;
 	font-weight: 500;
 	color: #838383;
-	line-height: 0.75;
+	line-height: 1.2;
 	margin-top: 17px;
+	white-space: normal;
+	padding: 0px 20px 0px 15px; /* Tăng khoảng cách bên trái */
+	display: inline-block;
 }
 
 .doctor_link {
