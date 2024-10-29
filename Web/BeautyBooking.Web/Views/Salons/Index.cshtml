@@ -26,7 +26,9 @@
                         <a asp-area="" asp-controller="Salons" asp-action="Details" asp-route-id="@salon.Id">@salon.Name</a>
                     </div>
                     <div class="doctor_title"><strong>@salon.CategoryName</strong></div>
-                    <div class="doctor_title">@salon.CityName, @salon.Address</div>
+                    <br>
+                    <div class="doctor_title"><strong>City:</strong> @salon.CityName</div>
+                    <div class="doctor_title"><strong>Address:</strong> @salon.Address</div>
                     <div class="doctor_title ml-2">
                         <div class="button button_1 elements_button mt-2">
                             <a asp-area="" asp-controller="Salons" asp-action="Details" asp-route-id="@salon.Id">
