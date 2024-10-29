@@ -20,9 +20,9 @@
                 {
                     new Category // Id = 1
                     {
-                        Name = "Hair Salons",
-                        Description = "Hair salons come in a variety of shapes and sizes. Whether you prefer to splurge on regular hair appointments or like to chop and change to suit your location and your budget, one thing is for certain - we all need a good trim every so often and a hair salon is the place to do it.",
-                        ImageUrl = GlobalConstants.Images.Hair,
+                        Name = "Make-up Service",
+                        Description = "Dịch vụ trang điểm chuyên nghiệp, giúp bạn tỏa sáng trong mọi dịp từ tự nhiên, thanh lịch đến quyến rũ, cá tính. Đội ngũ chuyên viên tận tâm, sử dụng sản phẩm chất lượng cao phù hợp với mọi loại da, đảm bảo lớp trang điểm bền màu, hoàn hảo suốt ngày dài.",
+                        ImageUrl = GlobalConstants.Images.Makeup,
                     },
                     new Category // Id = 2
                     {
