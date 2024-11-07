@@ -8,5 +8,7 @@
         public string Id { get; set; }
 
         public string Name { get; set; }
+        public string YearOfExperience { get; set; }
+        public int SalonsCount { get; set; }
     }
 }

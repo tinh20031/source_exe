@@ -22,6 +22,7 @@
         public double Rating { get; set; }
 
         public int RatersCount { get; set; }
+        public string YearOfExperience { get; set; }
 
         public virtual ICollection<SalonServiceViewModel> Services { get; set; }
     }

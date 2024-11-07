@@ -19,7 +19,7 @@
 
         Task<T> GetByIdAsync<T>(string id);
 
-        Task<string> AddAsync(string name, int categoryId, int cityId, string address, string imageUrl);
+        Task<string> AddAsync(string name, int categoryId, int cityId, string address, string imageUrl, string yearOfExperience);
 
         Task DeleteAsync(string id);
 

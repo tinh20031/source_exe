@@ -79,7 +79,7 @@
             }
 
             // Add Salon
-            var salonId = await this.salonsService.AddAsync(input.Name, input.CategoryId, input.CityId, input.Address, imageUrl);
+            var salonId = await this.salonsService.AddAsync(input.Name, input.CategoryId, input.CityId, input.Address, imageUrl, input.YearOfExperience);
 
             // Add to the Salon all Services from its Category
             var servicesIds = await this.servicesService.GetAllIdsByCategoryAsync(input.CategoryId);

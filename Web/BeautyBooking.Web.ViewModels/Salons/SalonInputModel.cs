@@ -21,6 +21,7 @@
         [Required]
         public int CityId { get; set; }
 
+        public string YearOfExperience { get; set; }
         [Required]
         [StringLength(
             GlobalConstants.DataValidations.AddressMaxLength,

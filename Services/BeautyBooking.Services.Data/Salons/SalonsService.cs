@@ -103,7 +103,7 @@
             return salon;
         }
 
-        public async Task<string> AddAsync(string name, int categoryId, int cityId, string address, string imageUrl)
+        public async Task<string> AddAsync(string name, int categoryId, int cityId, string address, string imageUrl, string yearOfExperience)
         {
             var salon = new Salon
             {
@@ -113,6 +113,7 @@
                 CityId = cityId,
                 Address = address,
                 ImageUrl = imageUrl,
+                YearOfExperience = yearOfExperience,
                 Rating = 0,
                 RatersCount = 0,
             };
