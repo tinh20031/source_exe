@@ -26,6 +26,7 @@
 
         public async Task<IActionResult> Index(
             int? sortId, // categoryId
+           int? cityId,
             string currentFilter,
             string searchString,
             int? pageNumber)
@@ -43,6 +44,7 @@
             }
 
             this.ViewData["CurrentSort"] = sortId;
+            this.ViewData["CurrentCityFilter"] = cityId;
 
             if (searchString != null)
             {
@@ -60,15 +62,16 @@
 
             var salons = await this.salonsService
                 .GetAllWithSortingFilteringAndPagingAsync<SalonViewModel>(
-                    searchString, sortId, pageSize, pageIndex);
+                     searchString, sortId, cityId, pageSize, pageIndex);
             var salonsList = salons.ToList();
 
             var count = await this.salonsService
-                .GetCountForPaginationAsync(searchString, sortId);
+                .GetCountForPaginationAsync(searchString, sortId, cityId);
 
             var viewModel = new SalonsPaginatedListViewModel
             {
                 Salons = new PaginatedList<SalonViewModel>(salonsList, count, pageIndex, pageSize),
+                SelectedCityId = cityId,
             };
 
             return this.View(viewModel);

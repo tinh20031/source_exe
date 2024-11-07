@@ -3,9 +3,19 @@
     this.ViewData["Title"] = "Beauty Salons";
 }
 
-<div>
-    @await Component.InvokeAsync("CategoriesSimpleList")
+<div class="d-flex align-items-start ml-5">
+    <!-- Component lọc theo City -->
+    <div class="mr-3">
+        @await Component.InvokeAsync("CitiesSimpleList")
+    </div>
+
+    <!-- Component lọc theo Category -->
+    <div>
+        @await Component.InvokeAsync("CategoriesSimpleList")
+    </div>
 </div>
+
+<hr class="bg-dark m-4" style="height: 6px;" />
 <div class="text-center text-dark pb-5">
     <h2><strong>@this.ViewData["CategoryName"]?.ToString()</strong></h2>
 </div>

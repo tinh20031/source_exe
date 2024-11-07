@@ -22,7 +22,7 @@
                     {
                         Name = "Make-up Service",
                         Description = "Dịch vụ trang điểm chuyên nghiệp, giúp bạn tỏa sáng trong mọi dịp từ tự nhiên, thanh lịch đến quyến rũ, cá tính. Đội ngũ chuyên viên tận tâm, sử dụng sản phẩm chất lượng cao phù hợp với mọi loại da, đảm bảo lớp trang điểm bền màu, hoàn hảo suốt ngày dài.",
-                        ImageUrl = GlobalConstants.Images.Makeup,
+                        ImageUrl = GlobalConstants.Images.MakeUp,
                     },
                     new Category // Id = 2
                     {

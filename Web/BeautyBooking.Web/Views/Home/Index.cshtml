@@ -9,8 +9,8 @@
     <div class="container">
         <div class="row">
             <div class="col text-center">
-                <div class="section_title">Beauty Services</div>
-                <div class="section_subtitle">to choose from</div>
+                <div class="section_title">Dịch Vụ Làm Đẹp </div>
+                @* <div class="section_subtitle">to choose from</div> *@
             </div>
         </div>
         <div class="row dept_row">
@@ -43,7 +43,7 @@
         <div class="row">
             <div class="col">
                 <div class="button services_button ml-auto mr-auto">
-                    <a asp-area="" asp-controller="Categories" asp-action="Index"><span>see all</span><span>see all</span></a>
+                    <a asp-area="" asp-controller="Categories" asp-action="Index"><span>xem tất cả </span><span>xem tất cả</span></a>
                 </div>
             </div>
         </div>
@@ -116,7 +116,7 @@
             <!-- Latest News -->
             <div class="col-lg-5">
                 <div class="news-grey">
-                    <div class="news_title">Latest Blog Posts</div>
+                    <div class="news_title">Bài viết blog mới nhất</div>
                     <div class="news_container">
                         <div>
                             @await Component.InvokeAsync("LatestBlogPosts", 4)

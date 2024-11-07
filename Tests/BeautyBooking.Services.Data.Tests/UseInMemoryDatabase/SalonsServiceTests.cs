@@ -33,7 +33,7 @@
             await this.CreateSalonAsync(Guid.NewGuid().ToString());
             await this.CreateSalonAsync(Guid.NewGuid().ToString());
 
-            var actual = await this.Service.GetCountForPaginationAsync(" ", 0);
+            var actual = await this.Service.GetCountForPaginationAsync(" ", 0, 0);
             Assert.Equal(0, actual);
         }
 
