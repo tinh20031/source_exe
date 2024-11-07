@@ -22,9 +22,17 @@ else
                 <div class="info_image"><img src="@Model.SalonImageUrl" alt=""></div>
                 <div class="info_content">
                     <div class="info_title">@Model.SalonName</div>
-                    <div class="info_text">Category: <strong>@Model.SalonCategoryName</strong></div>
-                    <div class="info_text">City: <strong>@Model.SalonCityName</strong></div>
-                    <div class="info_text">Address: <strong>@Model.SalonAddress</strong></div>
+                    <div class="info_text">Dịch vụ: <strong>@Model.SalonCategoryName</strong></div>
+                    <div class="info_text">Thành phố/Huyện: <strong>@Model.SalonCityName</strong></div>
+                    <div class="info_text">Địa chỉ: <strong>@Model.SalonAddress</strong></div>
+                    @if (Model.YearOfExperience != null)
+                    {
+                        <div class="info_text">Kinh nghiệm: <strong>@Model.YearOfExperience năm</strong></div>
+                    }
+                    else
+                    {
+                        <div class="info_text">Kinh nghiệm: <strong>Không có</strong></div>
+                    }
                 </div>
             </div>
         </div>

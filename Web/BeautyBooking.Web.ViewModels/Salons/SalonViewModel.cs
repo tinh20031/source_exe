@@ -24,5 +24,6 @@
         public int RatersCount { get; set; }
 
         public int AppointmentsCount { get; set; }
+        public string YearOfExperience { get; set; }
     }
 }

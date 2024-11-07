@@ -48,6 +48,7 @@
                 CityId = 1,
                 Address = new NLipsum.Core.Sentence().ToString(),
                 ImageUrl = new NLipsum.Core.Word().ToString(),
+                YearOfExperience = new NLipsum.Core.Sentence().ToString(),
                 Rating = 4,
                 RatersCount = 1,
             };
@@ -59,6 +60,7 @@
                 CityId = 1,
                 Address = new NLipsum.Core.Sentence().ToString(),
                 ImageUrl = new NLipsum.Core.Word().ToString(),
+                YearOfExperience = new NLipsum.Core.Sentence().ToString(),
                 Rating = 4,
                 RatersCount = 1,
             };
@@ -70,6 +72,7 @@
                 CityId = 1,
                 Address = new NLipsum.Core.Sentence().ToString(),
                 ImageUrl = new NLipsum.Core.Word().ToString(),
+                YearOfExperience = new NLipsum.Core.Sentence().ToString(),
                 Rating = 4,
                 RatersCount = 1,
             };
@@ -95,12 +98,13 @@
             await this.CreateSalonAsync(newGuidId);
 
             var name = new NLipsum.Core.Sentence().ToString();
+            var yearOfExperience = new NLipsum.Core.Sentence().ToString();
             var categoryId = 1;
             var cityId = 1;
             var address = new NLipsum.Core.Sentence().ToString();
             var imageUrl = new NLipsum.Core.Word().ToString();
 
-            await this.Service.AddAsync(name, categoryId, cityId, address, imageUrl);
+            await this.Service.AddAsync(name, categoryId, cityId, address, imageUrl, yearOfExperience);
 
             var salonsCount = await this.DbContext.Salons.CountAsync();
             Assert.Equal(2, salonsCount);

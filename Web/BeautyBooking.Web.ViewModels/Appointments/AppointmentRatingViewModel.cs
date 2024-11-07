@@ -22,6 +22,7 @@
 
         public string SalonImageUrl { get; set; }
 
+        public string YearOfExperience { get; set; }
         public bool? IsSalonRatedByTheUser { get; set; }
 
         [Required]

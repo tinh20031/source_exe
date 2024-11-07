@@ -10,9 +10,18 @@
             <div class="info_image"><img src="@Model.ImageUrl" alt=""></div>
             <div class="info_content">
                 <div class="info_title">@Model.Name</div>
-                <div class="info_text">Category: <strong>@Model.CategoryName</strong></div>
-                <div class="info_text">City: <strong>@Model.CityName</strong></div>
-                <div class="info_text">Address: <strong>@Model.Address</strong></div>
+                <div class="info_text">Dịch vụ: <strong>@Model.CategoryName</strong></div>
+                <div class="info_text">Thành phố/Huyện: <strong>@Model.CityName</strong></div>
+                <div class="info_text">Địa chỉ: <strong>@Model.Address</strong></div>
+                @if (Model.YearOfExperience != null)
+                {
+                    <div class="info_text">Kinh nghiệm: <strong>@Model.YearOfExperience năm</strong></div>
+                }
+                else
+                {
+                    <div class="info_text">Kinh nghiệm: <strong>Không có</strong></div>
+                }
+
                 <div class="info_text">
                     Rating: &nbsp;&nbsp;
                     <span class="star-rating">
