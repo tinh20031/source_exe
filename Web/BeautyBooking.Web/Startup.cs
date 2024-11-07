@@ -75,15 +75,9 @@
 
             // Cloudinary Setup
             Cloudinary cloudinary = new Cloudinary(new Account(
-<<<<<<< HEAD
-     GlobalConstants.CloudName, // this.configuration["Cloudinary:CloudName"],
-     this.configuration["Cloudinary:ApiKey"],
-     this.configuration["Cloudinary:ApiSecret"]));
-=======
-                GlobalConstants.CloudName, // this.configuration["Cloudinary:CloudName"],
-                this.configuration["Cloudinary:ApiKey"],
-                this.configuration["Cloudinary:ApiSecret"]));
->>>>>>> 512ecb7 (update chuc nang loc)
+         GlobalConstants.CloudName, // this.configuration["Cloudinary:CloudName"],
+         this.configuration["Cloudinary:ApiKey"],
+         this.configuration["Cloudinary:ApiSecret"]));
             services.AddSingleton(cloudinary);
 
             // Application services
