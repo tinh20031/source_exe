@@ -5,5 +5,6 @@
     public class SalonsPaginatedListViewModel
     {
         public PaginatedList<SalonViewModel> Salons { get; set; }
+        public int? SelectedCityId { get; set; }
     }
 }

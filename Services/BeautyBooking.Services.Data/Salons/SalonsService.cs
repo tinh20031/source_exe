@@ -32,6 +32,7 @@
         public async Task<IEnumerable<T>> GetAllWithSortingFilteringAndPagingAsync<T>(
             string searchString,
             int? sortId,
+            int? cityId,
             int pageSize,
             int pageIndex)
         {
@@ -52,14 +53,20 @@
                 query = query
                     .Where(x => x.CategoryId == sortId);
             }
+            if (cityId.HasValue)
+            {
+                query = query.Where(s => s.CityId == cityId.Value);
+            }
 
             return await query
-                .Skip((pageIndex - 1) * pageSize)
-                .Take(pageSize)
-                .To<T>().ToListAsync();
+       .OrderBy(s => s.Name)
+       .Skip((pageIndex - 1) * pageSize)
+       .Take(pageSize)
+       .To<T>()
+       .ToListAsync();
         }
 
-        public async Task<int> GetCountForPaginationAsync(string searchString, int? sortId)
+        public async Task<int> GetCountForPaginationAsync(string searchString, int? sortId, int? cityId)
         {
             IQueryable<Salon> query =
                 this.salonsRepository
@@ -77,6 +84,10 @@
             {
                 query = query
                     .Where(x => x.CategoryId == sortId);
+            }
+            if (cityId.HasValue)
+            {
+                query = query.Where(s => s.CityId == cityId.Value);
             }
 
             return await query.CountAsync();
